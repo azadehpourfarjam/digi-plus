@@ -1,0 +1,23 @@
+@import "Xl.css";
+@import "Lg.css";
+@import "Md.css";
+@import "Sm.css";
+@import "Xs.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'shabnam';
+    src: url("../font/Shabnam.ttf"),
+    url("../font/Shabnam.woff"),
+    url("../font/Shabnam.woff2");
+}
+body{
+    font-family: 'shabnam';
+}
+.header{
+    background-color: whitesmoke;
+}
