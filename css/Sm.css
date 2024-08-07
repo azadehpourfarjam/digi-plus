@@ -257,7 +257,7 @@
         text-decoration: none;
         font-size: 18px;
         color: darkorange;
-        padding: 20px;
+        padding: 20px 10px;
         direction: rtl;
         transition: all .5s ease;
     }
