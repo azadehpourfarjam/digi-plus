@@ -227,7 +227,7 @@
         position: absolute;
         top: 0;
         right:-1000px;
-        width: 300px;
+        width: 100%;
         padding: 20px;
         background-image: url("../images/sidenav4.jpg");
         background-repeat: no-repeat;
