@@ -40,3 +40,16 @@ categoriesDeclare.addEventListener('mouseover',function (){
 categoriesDeclare.addEventListener('mouseout',()=>{
     categoriesDeclare.children[1].style.transform='scale(0,0)';
 })
+
+
+let sliderSwiper=document.querySelector('.slider .swiper');
+let next= document.querySelector('.slider .swiper .swiper-button-next');
+let prev= document.querySelector('.slider .swiper .swiper-button-prev');
+sliderSwiper.addEventListener('mouseover',function (){
+   next.style.display='block';
+   prev.style.display='block';
+})
+sliderSwiper.addEventListener('mouseout',function (){
+   next.style.display='none';
+   prev.style.display='none';
+})
