@@ -1,40 +1,28 @@
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 1400px) {
 
     .boxMenu{
-    }
-    .barBox{
-        padding: 0 20px;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         direction: rtl;
+        border-bottom: 2px solid lightgrey;
     }
-
-    .barBox>.mobile{
-        display: block;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background-color: black;
-        border-radius: 7px;
-    }
-    .mobile>span{
-        display: block;
-        width: inherit;
+    .barBox{
         height: inherit;
-        text-align: center;
-        line-height: 50px;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
+        margin-left: 20px;
+    }
+    .boxNav{
+
+    }
+    .barBox>.mobile{
+        display: none;
     }
     .categoriesBox{
         position: relative;
         height: 100%;
         box-sizing: border-box;
     }
+
     .barBox .categoriesBox a.categoriesDeclare{
         display: flex;
         align-items:center;
@@ -42,29 +30,14 @@
         font-size: 18px;
         color: black;
         position: relative;
-        padding: 40px 0 40px 20px;
+        padding: 40px;
         overflow: hidden;
     }
-
-
     a.categoriesDeclare>span:nth-of-type(1){
         margin-left: 7px;
         font-size: 20px;
     }
-    .categoriesBox a.categoriesDeclare:before{
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        bottom: 0;
-        left: -1000px;
-        background-color:coral;
-        transition: all .5s ease;
-    }
-    .categoriesBox a.categoriesDeclare:hover::before{
-        left: 0;
-    }
+
 
     a.categoriesDeclare::after{
         content: '';
@@ -74,23 +47,25 @@
         position: absolute;
         left: 0;
         top: calc(50% - 10px);
-        background-color: black;
+        background-color:black;
 
     }
     .categoriesList{
         list-style: none;
-        padding: 20px;
+        padding: 20px 10px;
         position: absolute;
         right: 0;
         top: 100%;
         z-index: 2;
         background-color: #ffffff;
+        width: 300px;
         box-shadow: -2px 2px 2px grey;
         display: none;
     }
     .categoriesBox:hover>.categoriesList{
         display: block;
     }
+
 
     .categoriesList>li>a{
         display:flex;
@@ -99,7 +74,6 @@
         font-size: 18px;
         padding: 20px 30px;
         color: black;
-        width: 400px;
         transition: all .5s ease;
     }
     .categoriesList>li>a>span{
@@ -109,23 +83,18 @@
         background-color: lightblue;
         border-radius: 7px;
     }
-
     .categoriesList li .subCategory{
+        position: absolute;
+        right:100%;
+        top: 0;
         padding: 20px;
         background-color: #fff;
         box-shadow:2px 2px 2px grey ,  -2px 0 2px grey;
-        display: none;
-    }
-    .categoriesList li:hover .subCategory{
-        display: block;
     }
 
     .subCategory .category-title{
         height: 40px;
         width: 300px;
-    }
-    .subCategory:hover>ul{
-        display: block;
     }
     .category-title>a{
         width: inherit;
@@ -144,11 +113,16 @@
     .subCategory ul{
         list-style: none;
         margin-top: 20px;
-        display: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+        width: 700px;
     }
 
     .subCategory ul li a{
-        display:block;
+        display:flex;
+        align-items: center;
         text-decoration: none;
         color:grey;
         font-size: 17px;
@@ -157,6 +131,7 @@
     }
     .subCategory ul li.head{
         position: relative;
+        width: 300px;
         margin-bottom: 30px;
     }
     .subCategory ul li.head::before{
@@ -183,91 +158,42 @@
         font-size: 12px;
     }
 
-
-
-    .boxNav{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        background-color:transparent;
-        height: 100vh;
-        z-index: 10;
-        overflow: hidden;
+    .boxNav .close-nav .close{
         display: none;
     }
-    @keyframes animate {
-        0%{
-            right: -1000px;
-        }
-        100%{
-            right: 0;
-        }
-    }
-    @keyframes animate1 {
-        0%{
-            right:0;
-        }
-        100%{
-            right: -1000px;
-        }
-    }
-    .animate{
-        animation-name: animate;
-        animation-duration: 1s;
-        animation-timing-function: ease;
-    }
-    .animate1{
-        animation-name: animate1;
-        animation-duration: 2s;
-        animation-timing-function: ease;
-    }
-    .boxNav .close-nav{
-        position: absolute;
-        top: 0;
-        right:-1000px;
-        width: 400px;
-        padding: 20px;
-        background-image: url("../images/sidenav4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .boxNav .close-nav .close{
-        display: block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 50%;
-        color: #fff;
-        background-color: darkorange;
-        border: 2px solid black;
-    }
     .boxNav .close-nav .nav{
-        width:100%;
-        padding: 20px 30px;
         list-style: none;
-        margin-top: 20px;
+        direction: rtl;
+        display: flex;
+        align-items: center;
     }
+
     .nav li a{
         display: flex;
         align-items: center;
         text-decoration: none;
+        padding: 40px 20px;
+        box-sizing: border-box;
         font-size: 18px;
-        color: darkorange;
-        padding: 20px;
-        direction: rtl;
-        transition: all .5s ease;
+        color: black;
+        position: relative;
+        overflow: hidden;
     }
-
     .nav li a>span{
         margin-left: 4px;
     }
-    .nav li a:hover{
-        background-color: black;
-        border-radius: 5px;
-        color: #fff;
+    span.red-line{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        margin-left: 0 !important;
+        transform: scale(0,0);
+        background-color:coral;
+        transition: all .5s ease;
     }
 
     /* slider */
@@ -340,7 +266,7 @@
     .swiper-circles{
         direction: rtl;
         position: relative;
-        width: 600px;
+        width: 1200px;
     }
     .swiper-circles .swiper-wrapper{
     }
@@ -399,6 +325,5 @@
     .swiper-circles .next{
         right: 40px;
     }
-
 
 }

@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1400px){
 
     .boxMenu{
         height: 100%;
@@ -161,22 +161,21 @@
     .boxNav .close-nav .close{
         display: none;
     }
-    .boxNav .close-nav .nav{
+    .boxNav .close-nav .nav {
         list-style: none;
         direction: rtl;
         display: flex;
         align-items: center;
     }
-    .nav li{
-        padding: 0 30px;
-    }
+
     .nav li a{
         display: flex;
         align-items: center;
         text-decoration: none;
-        padding: 40px 0;
+        padding: 40px 15px;
         box-sizing: border-box;
-        font-size: 18px;
+        font-size: 15px;
+        font-weight: bold;
         color: black;
         position: relative;
         overflow: hidden;
