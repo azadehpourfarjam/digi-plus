@@ -3,7 +3,6 @@
     .boxMenu{
         height: 100%;
         display: flex;
-        align-items: center;
         direction: rtl;
         border-bottom: 2px solid lightgrey;
     }
@@ -12,7 +11,7 @@
         margin-left: 20px;
     }
     .boxNav{
-
+     height: inherit;
     }
     .barBox>.mobile{
         display: none;
@@ -62,9 +61,7 @@
         box-shadow: -2px 2px 2px grey;
         display: none;
     }
-    .categoriesBox:hover>.categoriesList{
-        display: block;
-    }
+
 
 
     .categoriesList>li>a{
@@ -161,23 +158,30 @@
     .boxNav .close-nav .close{
         display: none;
     }
+    .boxNav .close-nav{
+        height: 100%;
+    }
     .boxNav .close-nav .nav{
         list-style: none;
+        height: 100%;
         direction: rtl;
         display: flex;
         align-items: center;
+    }
+    .boxNav .close-nav .nav li{
+        height: 100%;
+        margin-left: 25px;
     }
 
     .nav li a{
         display: flex;
         align-items: center;
         text-decoration: none;
-        padding: 40px 20px;
+        padding: 40px 0;
         box-sizing: border-box;
         font-size: 18px;
         color: black;
         position: relative;
-        overflow: hidden;
     }
     .nav li a>span{
         margin-left: 4px;
@@ -325,5 +329,272 @@
     .swiper-circles .next{
         right: 40px;
     }
+
+    /* special-carousel */
+    .special-carousel{
+        width: 1400px;
+        padding: 20px;
+        margin: 50px auto;
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background-color: rgba(200, 20, 60, 0.81);
+    }
+    .special-item{
+       width: 300px;
+    }
+    .special-carousel .swiper{
+        direction: rtl;
+    }
+    .special-carousel .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px !important;
+        padding: 10px;
+    }
+    .first-item{
+        background-image: url("../images/special-carousel/background.svg") , url("../images/special-carousel/Amazing.svg");
+        background-repeat: no-repeat;
+        background-size: 130px;
+        background-position: center top , center 60%;
+        position: relative;
+        padding: 50px;
+        height: 390px;
+    }
+    .first-item .view-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        direction: rtl;
+        padding: 20px;
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+    }
+    .view-all>span:nth-of-type(1){
+        display: block;
+        font-size: 18px;
+    }
+    .view-all>span:nth-of-type(2){
+        display: block;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .border-item{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .special-item>a{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .special-item>a>img{
+        display: block;
+        width:100%;
+        height: 150px;
+    }
+    .specialItem-declare{
+        direction: rtl;
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+   .special-item a .offBox{
+        padding: 32px 0;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       direction: rtl;
+    }
+  .special-item a  .off{
+        display: block;
+        width: 50px;
+        height: 40px;
+      line-height: 40px;
+      text-align: center;
+        border-radius: 13px;
+      font-size: 20px;
+        background-color:crimson;
+        color: white;
+    }
+    .off-line{
+    }
+    .off-line .price{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .price span{
+        display: block;
+        color: black;
+        font-size: 18px;
+    }
+    .price span:nth-of-type(1){
+        margin-left: 4px;
+    }
+    .price-off{
+        display: inline-block;
+        color: rgba(0,0,0,.5);
+        font-size: 18px;
+        position: relative;
+    }
+    .price-off::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 2px);
+        background-color: grey;
+    }
+    .swiper-special .swiper-button-prev , .swiper-special .swiper-button-next{
+        display: block;
+        background-color: transparent;
+        outline: none;
+        border-radius: 50%;
+    }
+    .swiper-special .swiper-button-prev::after , .swiper-special .swiper-button-next::after{
+        display: block;
+        width: inherit;
+        height: inherit;
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+    /* amazingBox */
+    .amazingBox{
+        width: 1600px;
+        margin: 50px auto;
+        /*border: 3px solid white;*/
+        border-radius: 20px;
+        overflow: hidden;
+        border: 3px solid green;
+    }
+    .amazingBox>a{
+        width: 100%;
+        height: 200px;
+        text-decoration: none;
+        padding: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        direction: rtl;
+        border-radius: 20px;
+    }
+    .bg{
+        background-image: url("../images/amazing/freshPattern.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: auto 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+   .bg-linear{
+       background-image: linear-gradient(267.6deg, rgba(137, 204, 129, 0.46), rgba(211, 211, 211, 0.07));
+       position: absolute;
+       left: 0;
+       top: 0;
+       bottom: 0;
+       right: 0;
+
+   }
+   .freshBox{
+       display: flex;
+       align-items: center;
+       position: relative;
+       z-index: 1;
+   }
+   .freshBox>img{
+       display: block;
+   }
+   .freshBox>img:nth-of-type(1){
+       width: 100px;
+       height: 100px;
+   }
+   .freshBox>img:nth-of-type(2){
+       width: 350px;
+       height: 40px;
+       margin-right: 30px;
+   }
+   .freshBox>p{
+       padding:10px 20px;
+       color: #fff;
+       background-color: darkgreen;
+       border-radius: 20px;
+       font-size: 20px;
+       font-weight: bold;
+       margin-right:30px ;
+   }
+   .offerBox{
+       list-style: none;
+       display: flex;
+       align-items: center;
+       position: relative;
+       z-index: 1;
+       margin-right: 20px;
+   }
+   .offerBox>li{
+       display: block;
+       padding: 20px;
+       box-shadow: 2px 2px 2px white , -2px -2px 2px white;
+       background-color: #fff;
+       border-radius: 50%;
+       position: relative;
+       z-index: 2;
+       margin-left: 20px;
+   }
+   .offerBox>li>img{
+       display: block;
+       width: 70px;
+       height: 70px
+   }
+   .offerBox>li>.off{
+       display: block;
+       width: 50px;
+       height: 30px;
+       line-height: 30px;
+       text-align: center;
+       font-size: 16px;
+       color: #fff;
+       background-color: deeppink;
+       border-radius: 20px;
+       position: absolute;
+       bottom: -15px;
+       right: 10px;
+   }
+   .amazingBox>a>.moreLink{
+       box-shadow: 2px 2px 2px white , -2px -2px 2px white;
+       display: flex;
+       align-items: center;
+       justify-content:center ;
+       background-color: #fff;
+       border-radius: 20px;
+       position: relative;
+       z-index:1 ;
+   }
+   .moreLink>span{
+       display: block;
+       padding: 20px 10px;
+       text-align: center;
+       font-size: 20px;
+       font-weight: bold;
+       color: #57d257;
+   }
+
 
 }

@@ -22,8 +22,9 @@ close.addEventListener('click',function (){
 
 
 
-let links=document.querySelectorAll('.nav li a');
+let links=document.querySelectorAll('.nav>li>a');
 links=[...links];
+
 links.map((elem)=>{
     elem.onmouseover=()=>{
         elem.children[1].style.transform='scale(1,1)';
@@ -32,14 +33,19 @@ links.map((elem)=>{
         elem.children[1].style.transform='scale(0,0)';
     }
 });
+//............
 
-let categoriesDeclare=document.querySelector('.categoriesBox .categoriesDeclare');
-categoriesDeclare.addEventListener('mouseover',function (){
-    categoriesDeclare.children[1].style.transform='scale(1,1)';
-})
-categoriesDeclare.addEventListener('mouseout',()=>{
-    categoriesDeclare.children[1].style.transform='scale(0,0)';
-})
+function showSpan(x){
+    x.children[2].style.transform='scale(1,1)';
+    x.children[1].style.display='block';
+}
+
+function hideSpan(x){
+    x.children[2].style.transform='scale(0,0)';
+    x.children[1].style.display='none';
+}
+
+//.........................
 
 
 let sliderSwiper=document.querySelector('.slider .swiper');

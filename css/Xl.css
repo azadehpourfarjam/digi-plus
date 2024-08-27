@@ -167,12 +167,15 @@
         display: flex;
         align-items: center;
     }
+    .boxNav .close-nav .nav li{
+        margin-left: 30px;
+    }
 
     .nav li a{
         display: flex;
         align-items: center;
         text-decoration: none;
-        padding: 40px 15px;
+        padding: 40px 0;
         box-sizing: border-box;
         font-size: 15px;
         font-weight: bold;
@@ -206,7 +209,7 @@
         border-radius: 7px;
     }
    .slider .swiper-slide{
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -327,4 +330,154 @@
         right: 40px;
     }
 
-}
+    /* special-carousel */
+    .special-carousel{
+        width: 1200px;
+        padding: 20px;
+        margin: 50px auto;
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background-color: rgba(200, 20, 60, 0.81);
+    }
+    .special-item{
+        width: 300px;
+    }
+    .special-carousel .swiper{
+        direction: rtl;
+    }
+    .special-carousel .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px !important;
+        padding: 10px;
+    }
+    .first-item{
+        background-image: url("../images/special-carousel/background.svg") , url("../images/special-carousel/Amazing.svg");
+        background-repeat: no-repeat;
+        background-size: 130px;
+        background-position: center top , center 60%;
+        position: relative;
+        padding: 50px;
+        height: 390px;
+    }
+    .first-item .view-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        direction: rtl;
+        padding: 20px;
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+    }
+    .view-all>span:nth-of-type(1){
+        display: block;
+        font-size: 18px;
+    }
+    .view-all>span:nth-of-type(2){
+        display: block;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .border-item{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .special-item>a{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .special-item>a>img{
+        display: block;
+        width:100%;
+        height: 150px;
+    }
+    .specialItem-declare{
+        direction: rtl;
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+    .special-item a .offBox{
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        direction: rtl;
+    }
+    .special-item a  .off{
+        display: block;
+        width: 50px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 13px;
+        font-size: 20px;
+        background-color:crimson;
+        color: white;
+    }
+    .off-line{
+    }
+    .off-line .price{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .price span{
+        display: block;
+        color: black;
+        font-size: 18px;
+    }
+    .price span:nth-of-type(1){
+        margin-left: 4px;
+    }
+    .price-off{
+        display: inline-block;
+        color: rgba(0,0,0,.5);
+        font-size: 18px;
+        position: relative;
+    }
+    .price-off::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 2px);
+        background-color: grey;
+    }
+    .swiper-special .swiper-button-prev , .swiper-special .swiper-button-next{
+        display: block;
+        background-color: transparent;
+        outline: none;
+        border-radius: 50%;
+    }
+    .swiper-special .swiper-button-prev::after , .swiper-special .swiper-button-next::after{
+        display: block;
+        width: inherit;
+        height: inherit;
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+
+    /* amazingBox */
+
+    .amazingBox{
+        display: none;
+    }
+
+    }
