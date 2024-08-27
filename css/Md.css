@@ -245,6 +245,7 @@
         border: 2px solid black;
     }
     .boxNav .close-nav .nav{
+        display: block;
         width:100%;
         padding: 20px 30px;
         list-style: none;
@@ -252,6 +253,7 @@
     }
     .nav li{
         direction: rtl;
+        padding:0 20px 0 0 !important;
     }
     .nav li a{
         display: flex;
@@ -263,6 +265,8 @@
         direction: rtl;
         transition: all .5s ease;
     }
+
+
 
 
     .nav li a>span{
