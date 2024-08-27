@@ -251,7 +251,7 @@
         margin-top: 20px;
     }
     .nav li{
-        padding:0 20px !important;
+        direction: rtl;
     }
     .nav li a{
         display: flex;
@@ -268,9 +268,11 @@
     .nav li a>span{
         margin-left: 4px;
     }
-    .nav li a:hover{
+    .nav li:hover{
         background-color: black;
         border-radius: 5px;
+    }
+    .nav li:hover>a{
         color: #fff;
     }
 
