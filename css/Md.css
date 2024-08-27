@@ -250,16 +250,20 @@
         list-style: none;
         margin-top: 20px;
     }
+    .nav li{
+        padding:0 20px !important;
+    }
     .nav li a{
         display: flex;
         align-items: center;
         text-decoration: none;
+        width: fit-content;
         font-size: 18px;
-        color:black;
-        padding: 20px;
+        color: black;
         direction: rtl;
         transition: all .5s ease;
     }
+
 
     .nav li a>span{
         margin-left: 4px;
