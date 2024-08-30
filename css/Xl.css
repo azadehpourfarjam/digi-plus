@@ -515,5 +515,48 @@
         border-radius: 20px;
     }
 
+    /* pay-category */
+    .pay-category{
+        padding: 50px;
+    }
+    .pay-category .title{
+        line-height: 40px;
+        text-align: center;
+    }
+    .categories{
+        padding: 50px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        direction: rtl;
+    }
+    .category-item{
+        display: block;
+        text-decoration: none;
+    }
+    .category-item>div{
+    }
+    .category-item>div>img{
+        display: block;
+        width: 120px;
+        height: 120px;
+    }
+    .category-item>div>p{
+        line-height: 40px;
+        width: 100px;
+        margin: auto auto;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+    }
+    .mr-40{
+        margin-right: 40px;
+    }
+    .mb-40{
+        margin-bottom: 40px;
+    }
+
 
 }
