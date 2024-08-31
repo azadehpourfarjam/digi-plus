@@ -406,10 +406,9 @@
 
     /* special-carousel */
     .special-carousel{
-        width: 400px;
+        width: 450px;
         padding: 20px;
         margin: 50px auto;
-        border: 3px solid crimson;
         border-radius: 10px;
         background-color: rgba(200, 20, 60, 0.81);
     }
