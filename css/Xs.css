@@ -640,7 +640,7 @@
         justify-content: center;
     }
     .phone-cover{
-        width: 500px;
+        width: 400px;
         display: flex;
         flex-wrap: wrap;
         direction: rtl;
@@ -680,8 +680,8 @@
     }
     .sub-coverItem>img{
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     .border-left{
         border-left: 2px solid lightgrey;
