@@ -678,8 +678,8 @@
     }
     .sub-coverItem>img{
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .border-left{
         border-left: 2px solid lightgrey;
