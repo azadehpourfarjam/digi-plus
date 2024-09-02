@@ -668,6 +668,8 @@
     .cover-wrapper{
         padding: 20px 10px;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -680,8 +682,8 @@
     }
     .sub-coverItem>img{
         display: block;
-        width: inherit;
-        height: inherit;
+        width: 100%;
+        height: 100%;
     }
     .border-left{
         border-left: 2px solid lightgrey;
